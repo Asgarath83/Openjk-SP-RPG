@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{31AA52F8-3485-46D7-8ACD-3C70272C70F0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SP Game Library</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\JACODE\OpenJK-master\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jagamex86.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jagamex86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\JACODE\OpenJK-master\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jagamex86.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jagamex86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\JACODE\OpenJK-master\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jagamex86.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jagamex86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\JACODE\OpenJK-master\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jagamex86.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jagamex86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;CMAKE_INTDIR="Debug";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;CMAKE_INTDIR=\"Debug\";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/game/Debug/jagamex86.lib</ImportLibrary>
+      <ModuleDefinitionFile>F:/JACODE/OpenJK-master/code/game/game.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/Debug/jagamex86.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR="Release";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR=\"Release\";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/game/Release/jagamex86.lib</ImportLibrary>
+      <ModuleDefinitionFile>F:/JACODE/OpenJK-master/code/game/game.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/Release/jagamex86.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR="MinSizeRel";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR=\"MinSizeRel\";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/game/MinSizeRel/jagamex86.lib</ImportLibrary>
+      <ModuleDefinitionFile>F:/JACODE/OpenJK-master/code/game/game.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/MinSizeRel/jagamex86.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR="RelWithDebInfo";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_IMMERSION;_NO_PCH;FINAL_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";jagamex86_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\code\game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/game/RelWithDebInfo/jagamex86.lib</ImportLibrary>
+      <ModuleDefinitionFile>F:/JACODE/OpenJK-master/code/game/game.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/RelWithDebInfo/jagamex86.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/JACODE/OpenJK-master/code/game/CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/JACODE/OpenJK-master/code/game/CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/JACODE/OpenJK-master/code/game/CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/game/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/JACODE/OpenJK-master/code/game/CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;F:\JACODE\OpenJK-master\code\game\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\JACODE\OpenJK-master\code\game\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Q3_Interface.h" />
+    <ClInclude Include="ai.h" />
+    <ClInclude Include="anims.h" />
+    <ClInclude Include="b_local.h" />
+    <ClInclude Include="b_public.h" />
+    <ClInclude Include="bg_local.h" />
+    <ClInclude Include="bg_public.h" />
+    <ClInclude Include="bset.h" />
+    <ClInclude Include="bstate.h" />
+    <ClInclude Include="channels.h" />
+    <ClInclude Include="common_headers.h" />
+    <ClInclude Include="dmstates.h" />
+    <ClInclude Include="events.h" />
+    <ClInclude Include="fields.h" />
+    <ClInclude Include="g_functions.h" />
+    <ClInclude Include="g_headers.h" />
+    <ClInclude Include="g_items.h" />
+    <ClInclude Include="g_local.h" />
+    <ClInclude Include="g_nav.h" />
+    <ClInclude Include="g_navigator.h" />
+    <ClInclude Include="g_public.h" />
+    <ClInclude Include="g_roff.h" />
+    <ClInclude Include="g_shared.h" />
+    <ClInclude Include="genericparser2.h" />
+    <ClInclude Include="ghoul2_shared.h" />
+    <ClInclude Include="hitlocs.h" />
+    <ClInclude Include="npc_headers.h" />
+    <ClInclude Include="objectives.h" />
+    <ClInclude Include="say.h" />
+    <ClInclude Include="statindex.h" />
+    <ClInclude Include="surfaceflags.h" />
+    <ClInclude Include="teams.h" />
+    <ClInclude Include="weapons.h" />
+    <ClInclude Include="wp_saber.h" />
+    <ClInclude Include="g_vehicles.h" />
+    <ClInclude Include="..\cgame\cg_camera.h" />
+    <ClInclude Include="..\cgame\cg_lights.h" />
+    <ClInclude Include="..\cgame\animtable.h" />
+    <ClInclude Include="..\cgame\cg_headers.h" />
+    <ClInclude Include="..\cgame\cg_local.h" />
+    <ClInclude Include="..\cgame\cg_media.h" />
+    <ClInclude Include="..\cgame\cg_public.h" />
+    <ClInclude Include="..\cgame\common_headers.h" />
+    <ClInclude Include="..\cgame\FxParsing.h" />
+    <ClInclude Include="..\cgame\FxPrimitives.h" />
+    <ClInclude Include="..\cgame\FxScheduler.h" />
+    <ClInclude Include="..\cgame\FxSystem.h" />
+    <ClInclude Include="..\cgame\FxUtil.h" />
+    <ClInclude Include="..\cgame\strip_objectives.h" />
+    <ClInclude Include="..\ui\gameinfo.h" />
+    <ClInclude Include="..\qcommon\sstring.h" />
+    <ClInclude Include="..\qcommon\tags.h" />
+    <ClInclude Include="..\qcommon\timing.h" />
+    <ClInclude Include="..\qcommon\q_shared.h" />
+    <ClInclude Include="..\icarus\blockstream.h" />
+    <ClInclude Include="..\icarus\IcarusImplementation.h" />
+    <ClInclude Include="..\icarus\IcarusInterface.h" />
+    <ClInclude Include="..\icarus\sequence.h" />
+    <ClInclude Include="..\icarus\sequencer.h" />
+    <ClInclude Include="..\icarus\StdAfx.h" />
+    <ClInclude Include="..\icarus\taskmanager.h" />
+    <ClInclude Include="..\Ratl\array_vs.h" />
+    <ClInclude Include="..\Ratl\bits_vs.h" />
+    <ClInclude Include="..\Ratl\grid_vs.h" />
+    <ClInclude Include="..\Ratl\handle_pool_vs.h" />
+    <ClInclude Include="..\Ratl\hash_pool_vs.h" />
+    <ClInclude Include="..\Ratl\heap_vs.h" />
+    <ClInclude Include="..\Ratl\list_vs.h" />
+    <ClInclude Include="..\Ratl\map_vs.h" />
+    <ClInclude Include="..\Ratl\pool_vs.h" />
+    <ClInclude Include="..\Ratl\queue_vs.h" />
+    <ClInclude Include="..\Ratl\ratl_common.h" />
+    <ClInclude Include="..\Ratl\scheduler_vs.h" />
+    <ClInclude Include="..\Ratl\stack_vs.h" />
+    <ClInclude Include="..\Ratl\string_vs.h" />
+    <ClInclude Include="..\Ratl\vector_vs.h" />
+    <ClInclude Include="..\Ravl\CBounds.h" />
+    <ClInclude Include="..\Ravl\CMatrix.h" />
+    <ClInclude Include="..\Ravl\CVec.h" />
+    <ClInclude Include="..\Rufl\hfile.h" />
+    <ClInclude Include="..\Rufl\hstring.h" />
+    <ClInclude Include="..\Ragl\graph_region.h" />
+    <ClInclude Include="..\Ragl\graph_triangulate.h" />
+    <ClInclude Include="..\Ragl\graph_vs.h" />
+    <ClInclude Include="..\Ragl\kdtree_vs.h" />
+    <ClInclude Include="..\Ragl\ragl_common.h" />
+    <ClInclude Include="..\ghoul2\G2.h" />
+    <ClInclude Include="..\ghoul2\ghoul2_gore.h" />
+    <ClInclude Include="..\renderer\mdx_format.h" />
+    <ClInclude Include="..\renderer\tr_types.h" />
+    <ClInclude Include="..\client\vmachine.h" />
+    <ClCompile Include="AI_Animal.cpp"  />
+    <ClCompile Include="AI_AssassinDroid.cpp"  />
+    <ClCompile Include="AI_Atst.cpp"  />
+    <ClCompile Include="AI_BobaFett.cpp"  />
+    <ClCompile Include="AI_Civilian.cpp"  />
+    <ClCompile Include="AI_Default.cpp"  />
+    <ClCompile Include="AI_Droid.cpp"  />
+    <ClCompile Include="AI_GalakMech.cpp"  />
+    <ClCompile Include="AI_Glider.cpp"  />
+    <ClCompile Include="AI_Grenadier.cpp"  />
+    <ClCompile Include="AI_HazardTrooper.cpp"  />
+    <ClCompile Include="AI_Howler.cpp"  />
+    <ClCompile Include="AI_ImperialProbe.cpp"  />
+    <ClCompile Include="AI_Interrogator.cpp"  />
+    <ClCompile Include="AI_Jedi.cpp"  />
+    <ClCompile Include="AI_Mark1.cpp"  />
+    <ClCompile Include="AI_Mark2.cpp"  />
+    <ClCompile Include="AI_MineMonster.cpp"  />
+    <ClCompile Include="AI_Rancor.cpp"  />
+    <ClCompile Include="AI_Remote.cpp"  />
+    <ClCompile Include="AI_RocketTrooper.cpp"  />
+    <ClCompile Include="AI_SaberDroid.cpp"  />
+    <ClCompile Include="AI_SandCreature.cpp"  />
+    <ClCompile Include="AI_Seeker.cpp"  />
+    <ClCompile Include="AI_Sentry.cpp"  />
+    <ClCompile Include="AI_Sniper.cpp"  />
+    <ClCompile Include="AI_Stormtrooper.cpp"  />
+    <ClCompile Include="AI_Tusken.cpp"  />
+    <ClCompile Include="AI_Utils.cpp"  />
+    <ClCompile Include="AI_Wampa.cpp"  />
+    <ClCompile Include="g_active.cpp"  />
+    <ClCompile Include="g_breakable.cpp"  />
+    <ClCompile Include="g_camera.cpp"  />
+    <ClCompile Include="g_client.cpp"  />
+    <ClCompile Include="g_cmds.cpp"  />
+    <ClCompile Include="g_combat.cpp"  />
+    <ClCompile Include="g_emplaced.cpp"  />
+    <ClCompile Include="g_functions.cpp"  />
+    <ClCompile Include="g_fx.cpp"  />
+    <ClCompile Include="g_headers.cpp"  />
+    <ClCompile Include="g_inventory.cpp"  />
+    <ClCompile Include="g_itemLoad.cpp"  />
+    <ClCompile Include="g_items.cpp"  />
+    <ClCompile Include="g_main.cpp"  />
+    <ClCompile Include="g_mem.cpp"  />
+    <ClCompile Include="g_misc.cpp"  />
+    <ClCompile Include="g_misc_model.cpp"  />
+    <ClCompile Include="g_missile.cpp"  />
+    <ClCompile Include="g_mover.cpp"  />
+    <ClCompile Include="g_nav.cpp"  />
+    <ClCompile Include="g_navigator.cpp"  />
+    <ClCompile Include="g_navnew.cpp"  />
+    <ClCompile Include="g_object.cpp"  />
+    <ClCompile Include="g_objectives.cpp"  />
+    <ClCompile Include="g_rail.cpp"  />
+    <ClCompile Include="g_ref.cpp"  />
+    <ClCompile Include="g_roff.cpp"  />
+    <ClCompile Include="g_savegame.cpp"  />
+    <ClCompile Include="g_session.cpp"  />
+    <ClCompile Include="g_spawn.cpp"  />
+    <ClCompile Include="g_svcmds.cpp"  />
+    <ClCompile Include="g_target.cpp"  />
+    <ClCompile Include="G_Timer.cpp"  />
+    <ClCompile Include="g_trigger.cpp"  />
+    <ClCompile Include="g_turret.cpp"  />
+    <ClCompile Include="g_usable.cpp"  />
+    <ClCompile Include="g_utils.cpp"  />
+    <ClCompile Include="g_weapon.cpp"  />
+    <ClCompile Include="g_weaponLoad.cpp"  />
+    <ClCompile Include="genericparser2.cpp"  />
+    <ClCompile Include="NPC.cpp"  />
+    <ClCompile Include="NPC_behavior.cpp"  />
+    <ClCompile Include="NPC_combat.cpp"  />
+    <ClCompile Include="NPC_goal.cpp"  />
+    <ClCompile Include="NPC_misc.cpp"  />
+    <ClCompile Include="NPC_move.cpp"  />
+    <ClCompile Include="NPC_reactions.cpp"  />
+    <ClCompile Include="NPC_senses.cpp"  />
+    <ClCompile Include="NPC_sounds.cpp"  />
+    <ClCompile Include="NPC_spawn.cpp"  />
+    <ClCompile Include="NPC_stats.cpp"  />
+    <ClCompile Include="NPC_utils.cpp"  />
+    <ClCompile Include="wp_atst.cpp"  />
+    <ClCompile Include="wp_blaster_pistol.cpp"  />
+    <ClCompile Include="wp_blaster_rifle.cpp"  />
+    <ClCompile Include="wp_bot_laser.cpp"  />
+    <ClCompile Include="wp_bowcaster.cpp"  />
+    <ClCompile Include="wp_concussion.cpp"  />
+    <ClCompile Include="wp_demp2.cpp"  />
+    <ClCompile Include="wp_det_pack.cpp"  />
+    <ClCompile Include="wp_disruptor.cpp"  />
+    <ClCompile Include="wp_emplaced_gun.cpp"  />
+    <ClCompile Include="wp_flechette.cpp"  />
+    <ClCompile Include="wp_melee.cpp"  />
+    <ClCompile Include="wp_noghri_stick.cpp"  />
+    <ClCompile Include="wp_repeater.cpp"  />
+    <ClCompile Include="wp_rocket_launcher.cpp"  />
+    <ClCompile Include="wp_saber.cpp"  />
+    <ClCompile Include="wp_saberLoad.cpp"  />
+    <ClCompile Include="wp_stun_baton.cpp"  />
+    <ClCompile Include="wp_thermal.cpp"  />
+    <ClCompile Include="wp_trip_mine.cpp"  />
+    <ClCompile Include="wp_tusken.cpp"  />
+    <ClCompile Include="Q3_Interface.cpp"  />
+    <ClCompile Include="bg_misc.cpp"  />
+    <ClCompile Include="bg_pangles.cpp"  />
+    <ClCompile Include="bg_panimate.cpp"  />
+    <ClCompile Include="bg_pmove.cpp"  />
+    <ClCompile Include="bg_slidemove.cpp"  />
+    <ClCompile Include="AnimalNPC.cpp"  />
+    <ClCompile Include="bg_vehicleLoad.cpp"  />
+    <ClCompile Include="FighterNPC.cpp"  />
+    <ClCompile Include="g_vehicles.cpp"  />
+    <ClCompile Include="SpeederNPC.cpp"  />
+    <ClCompile Include="WalkerNPC.cpp"  />
+    <ClCompile Include="..\cgame\cg_camera.cpp"  />
+    <ClCompile Include="..\cgame\cg_consolecmds.cpp"  />
+    <ClCompile Include="..\cgame\cg_credits.cpp"  />
+    <ClCompile Include="..\cgame\cg_draw.cpp"  />
+    <ClCompile Include="..\cgame\cg_drawtools.cpp"  />
+    <ClCompile Include="..\cgame\cg_effects.cpp"  />
+    <ClCompile Include="..\cgame\cg_ents.cpp"  />
+    <ClCompile Include="..\cgame\cg_event.cpp"  />
+    <ClCompile Include="..\cgame\cg_headers.cpp"  />
+    <ClCompile Include="..\cgame\cg_info.cpp"  />
+    <ClCompile Include="..\cgame\cg_lights.cpp"  />
+    <ClCompile Include="..\cgame\cg_localents.cpp"  />
+    <ClCompile Include="..\cgame\cg_main.cpp"  />
+    <ClCompile Include="..\cgame\cg_marks.cpp"  />
+    <ClCompile Include="..\cgame\cg_players.cpp"  />
+    <ClCompile Include="..\cgame\cg_playerstate.cpp"  />
+    <ClCompile Include="..\cgame\cg_predict.cpp"  />
+    <ClCompile Include="..\cgame\cg_scoreboard.cpp"  />
+    <ClCompile Include="..\cgame\cg_servercmds.cpp"  />
+    <ClCompile Include="..\cgame\cg_snapshot.cpp"  />
+    <ClCompile Include="..\cgame\cg_syscalls.cpp"  />
+    <ClCompile Include="..\cgame\cg_text.cpp"  />
+    <ClCompile Include="..\cgame\cg_view.cpp"  />
+    <ClCompile Include="..\cgame\cg_weapons.cpp"  />
+    <ClCompile Include="..\cgame\FX_ATSTMain.cpp"  />
+    <ClCompile Include="..\cgame\FX_Blaster.cpp"  />
+    <ClCompile Include="..\cgame\FX_Bowcaster.cpp"  />
+    <ClCompile Include="..\cgame\FX_BryarPistol.cpp"  />
+    <ClCompile Include="..\cgame\FX_Concussion.cpp"  />
+    <ClCompile Include="..\cgame\FX_DEMP2.cpp"  />
+    <ClCompile Include="..\cgame\FX_Disruptor.cpp"  />
+    <ClCompile Include="..\cgame\FX_Emplaced.cpp"  />
+    <ClCompile Include="..\cgame\FX_Flechette.cpp"  />
+    <ClCompile Include="..\cgame\FX_HeavyRepeater.cpp"  />
+    <ClCompile Include="..\cgame\FX_NoghriShot.cpp"  />
+    <ClCompile Include="..\cgame\FX_RocketLauncher.cpp"  />
+    <ClCompile Include="..\cgame\FX_TuskenShot.cpp"  />
+    <ClCompile Include="..\cgame\FxPrimitives.cpp"  />
+    <ClCompile Include="..\cgame\FxScheduler.cpp"  />
+    <ClCompile Include="..\cgame\FxSystem.cpp"  />
+    <ClCompile Include="..\cgame\FxTemplate.cpp"  />
+    <ClCompile Include="..\cgame\FxUtil.cpp"  />
+    <ClCompile Include="..\ui\gameinfo.cpp"  />
+    <ClCompile Include="..\qcommon\tri_coll_test.cpp"  />
+    <ClCompile Include="..\qcommon\q_math.cpp"  />
+    <ClCompile Include="..\qcommon\q_shared.cpp"  />
+    <ClCompile Include="..\icarus\BlockStream.cpp"  />
+    <ClCompile Include="..\icarus\IcarusImplementation.cpp"  />
+    <ClCompile Include="..\icarus\Sequence.cpp"  />
+    <ClCompile Include="..\icarus\Sequencer.cpp"  />
+    <ClCompile Include="..\icarus\TaskManager.cpp"  />
+    <ClCompile Include="..\Ratl\ratl.cpp"  />
+    <ClCompile Include="..\Ravl\CBounds.cpp"  />
+    <ClCompile Include="..\Ravl\CVec.cpp"  />
+    <ClCompile Include="..\Rufl\hfile.cpp"  />
+    <ClCompile Include="..\Rufl\hstring.cpp"  />
+    <ResourceCompile Include="..\win32\game.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/JACODE/OpenJK-master/ZERO_CHECK.vcxproj">
+      <Project>88B0AE25-6EDC-479B-9573-B22CB311CB9D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
