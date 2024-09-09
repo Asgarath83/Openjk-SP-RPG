@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{128DBB74-D4F9-40A5-A5A1-2C2DD401F1BD}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SP Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\JACODE\OpenJK-master\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openjk_sp.x86.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openjk_sp.x86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\JACODE\OpenJK-master\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openjk_sp.x86.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openjk_sp.x86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\JACODE\OpenJK-master\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">openjk_sp.x86.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">openjk_sp.x86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\JACODE\OpenJK-master\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">openjk_sp.x86.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">openjk_sp.x86</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;glu32.lib;opengl32.lib;..\lib\OpenAL32.lib;..\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/Debug/openjk_sp.x86.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/Debug/openjk_sp.x86.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;glu32.lib;opengl32.lib;..\lib\OpenAL32.lib;..\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/Release/openjk_sp.x86.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/Release/openjk_sp.x86.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;glu32.lib;opengl32.lib;..\lib\OpenAL32.lib;..\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/MinSizeRel/openjk_sp.x86.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/MinSizeRel/openjk_sp.x86.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;__NO_JK2;_JK2EXE;FINAL_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\JACODE\OpenJK-master\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;winmm.lib;glu32.lib;opengl32.lib;..\lib\OpenAL32.lib;..\lib\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/JACODE/OpenJK-master/code/RelWithDebInfo/openjk_sp.x86.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/JACODE/OpenJK-master/RelWithDebInfo/openjk_sp.x86.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/JACODE/OpenJK-master/code/CMakeLists.txt;F:\JACODE\OpenJK-master\code\CMakeLists.txt;F:\Programmi\CMake\share\cmake-3.2\Modules\FindOpenGL.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;F:\JACODE\OpenJK-master\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/JACODE/OpenJK-master/code/CMakeLists.txt;F:\JACODE\OpenJK-master\code\CMakeLists.txt;F:\Programmi\CMake\share\cmake-3.2\Modules\FindOpenGL.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;F:\JACODE\OpenJK-master\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/JACODE/OpenJK-master/code/CMakeLists.txt;F:\JACODE\OpenJK-master\code\CMakeLists.txt;F:\Programmi\CMake\share\cmake-3.2\Modules\FindOpenGL.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;F:\JACODE\OpenJK-master\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/JACODE/OpenJK-master/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\Programmi\CMake\bin\cmake.exe -HF:/JACODE/OpenJK-master -BF:/JACODE/OpenJK-master --check-stamp-file F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/JACODE/OpenJK-master/code/CMakeLists.txt;F:\JACODE\OpenJK-master\code\CMakeLists.txt;F:\Programmi\CMake\share\cmake-3.2\Modules\FindOpenGL.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;F:\Programmi\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;F:\JACODE\OpenJK-master\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\JACODE\OpenJK-master\code\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client\eax\eax.h" />
+    <ClInclude Include="client\eax\EaxMan.h" />
+    <ClInclude Include="client\OpenAL\al.h" />
+    <ClInclude Include="client\OpenAL\alc.h" />
+    <ClInclude Include="client\OpenAL\alctypes.h" />
+    <ClInclude Include="client\OpenAL\altypes.h" />
+    <ClInclude Include="client\OpenAL\alu.h" />
+    <ClInclude Include="client\OpenAL\alut.h" />
+    <ClInclude Include="client\keys.h" />
+    <ClInclude Include="client\keycodes.h" />
+    <ClInclude Include="client\cl_mp3.h" />
+    <ClInclude Include="client\client.h" />
+    <ClInclude Include="client\client_ui.h" />
+    <ClInclude Include="client\snd_ambient.h" />
+    <ClInclude Include="client\snd_local.h" />
+    <ClInclude Include="client\snd_music.h" />
+    <ClInclude Include="client\snd_public.h" />
+    <ClInclude Include="client\vmachine.h" />
+    <ClInclude Include="qcommon\cm_draw.h" />
+    <ClInclude Include="qcommon\cm_landscape.h" />
+    <ClInclude Include="qcommon\cm_local.h" />
+    <ClInclude Include="qcommon\cm_patch.h" />
+    <ClInclude Include="qcommon\cm_polylib.h" />
+    <ClInclude Include="qcommon\cm_public.h" />
+    <ClInclude Include="qcommon\cm_randomterrain.h" />
+    <ClInclude Include="qcommon\cm_terrainmap.h" />
+    <ClInclude Include="qcommon\q_shared.h" />
+    <ClInclude Include="qcommon\sstring.h" />
+    <ClInclude Include="qcommon\stringed_ingame.h" />
+    <ClInclude Include="qcommon\stringed_interface.h" />
+    <ClInclude Include="qcommon\unzip.h" />
+    <ClInclude Include="..\lib\zlib\ioapi.h" />
+    <ClInclude Include="qcommon\tags.h" />
+    <ClInclude Include="qcommon\chash.h" />
+    <ClInclude Include="qcommon\qfiles.h" />
+    <ClInclude Include="qcommon\files.h" />
+    <ClInclude Include="qcommon\qcommon.h" />
+    <ClInclude Include="qcommon\stv_version.h" />
+    <ClInclude Include="qcommon\timing.h" />
+    <ClInclude Include="qcommon\MiniHeap.h" />
+    <ClInclude Include="server\exe_headers.h" />
+    <ClInclude Include="server\server.h" />
+    <ClInclude Include="game\channels.h" />
+    <ClInclude Include="game\anims.h" />
+    <ClInclude Include="game\b_public.h" />
+    <ClInclude Include="game\bg_public.h" />
+    <ClInclude Include="game\bset.h" />
+    <ClInclude Include="game\bstate.h" />
+    <ClInclude Include="game\common_headers.h" />
+    <ClInclude Include="game\g_functions.h" />
+    <ClInclude Include="game\g_items.h" />
+    <ClInclude Include="game\g_local.h" />
+    <ClInclude Include="game\g_nav.h" />
+    <ClInclude Include="game\g_public.h" />
+    <ClInclude Include="game\g_shared.h" />
+    <ClInclude Include="game\genericparser2.h" />
+    <ClInclude Include="game\statindex.h" />
+    <ClInclude Include="game\teams.h" />
+    <ClInclude Include="game\weapons.h" />
+    <ClInclude Include="game\surfaceflags.h" />
+    <ClInclude Include="game\ghoul2_shared.h" />
+    <ClInclude Include="mp3code\config.h" />
+    <ClInclude Include="mp3code\htable.h" />
+    <ClInclude Include="mp3code\jdw.h" />
+    <ClInclude Include="mp3code\l3.h" />
+    <ClInclude Include="mp3code\mhead.h" />
+    <ClInclude Include="mp3code\mp3struct.h" />
+    <ClInclude Include="mp3code\port.h" />
+    <ClInclude Include="mp3code\small_header.h" />
+    <ClInclude Include="mp3code\tableawd.h" />
+    <ClInclude Include="ui\gameinfo.h" />
+    <ClInclude Include="ui\menudef.h" />
+    <ClInclude Include="ui\ui_local.h" />
+    <ClInclude Include="ui\ui_public.h" />
+    <ClInclude Include="ui\ui_shared.h" />
+    <ClInclude Include="RMG\RM_Area.h" />
+    <ClInclude Include="RMG\RM_Headers.h" />
+    <ClInclude Include="RMG\RM_Instance.h" />
+    <ClInclude Include="RMG\RM_Instance_BSP.h" />
+    <ClInclude Include="RMG\RM_Instance_Group.h" />
+    <ClInclude Include="RMG\RM_Instance_Random.h" />
+    <ClInclude Include="RMG\RM_Instance_Void.h" />
+    <ClInclude Include="RMG\RM_InstanceFile.h" />
+    <ClInclude Include="RMG\RM_Manager.h" />
+    <ClInclude Include="RMG\RM_Mission.h" />
+    <ClInclude Include="RMG\RM_Objective.h" />
+    <ClInclude Include="RMG\RM_Path.h" />
+    <ClInclude Include="RMG\RM_Terrain.h" />
+    <ClInclude Include="ghoul2\G2.h" />
+    <ClInclude Include="ghoul2\ghoul2_gore.h" />
+    <ClInclude Include="cgame\cg_public.h" />
+    <ClInclude Include="cgame\animtable.h" />
+    <ClInclude Include="win32\afxres.h" />
+    <ClInclude Include="win32\win_local.h" />
+    <ClInclude Include="win32\AutoVersion.h" />
+    <ClInclude Include="win32\resource.h" />
+    <ClInclude Include="win32\glw_win.h" />
+    <ClCompile Include="client\cl_cgame.cpp"  />
+    <ClCompile Include="client\cl_cin.cpp"  />
+    <ClCompile Include="client\cl_console.cpp"  />
+    <ClCompile Include="client\cl_input.cpp"  />
+    <ClCompile Include="client\cl_keys.cpp"  />
+    <ClCompile Include="client\cl_main.cpp"  />
+    <ClCompile Include="client\cl_mp3.cpp"  />
+    <ClCompile Include="client\cl_parse.cpp"  />
+    <ClCompile Include="client\cl_scrn.cpp"  />
+    <ClCompile Include="client\cl_ui.cpp"  />
+    <ClCompile Include="client\snd_ambient.cpp"  />
+    <ClCompile Include="client\snd_dma.cpp"  />
+    <ClCompile Include="client\snd_mem.cpp"  />
+    <ClCompile Include="client\snd_mix.cpp"  />
+    <ClCompile Include="client\snd_music.cpp"  />
+    <ClCompile Include="client\vmachine.cpp"  />
+    <ClCompile Include="qcommon\cm_draw.cpp"  />
+    <ClCompile Include="qcommon\cm_load.cpp"  />
+    <ClCompile Include="qcommon\cm_patch.cpp"  />
+    <ClCompile Include="qcommon\cm_polylib.cpp"  />
+    <ClCompile Include="qcommon\cm_randomterrain.cpp"  />
+    <ClCompile Include="qcommon\cm_shader.cpp"  />
+    <ClCompile Include="qcommon\cm_terrain.cpp"  />
+    <ClCompile Include="qcommon\cm_terrainmap.cpp"  />
+    <ClCompile Include="qcommon\cm_test.cpp"  />
+    <ClCompile Include="qcommon\cm_trace.cpp"  />
+    <ClCompile Include="qcommon\cmd.cpp"  />
+    <ClCompile Include="qcommon\common.cpp"  />
+    <ClCompile Include="qcommon\cvar.cpp"  />
+    <ClCompile Include="qcommon\files_common.cpp"  />
+    <ClCompile Include="qcommon\files_pc.cpp"  />
+    <ClCompile Include="qcommon\md4.cpp"  />
+    <ClCompile Include="qcommon\msg.cpp"  />
+    <ClCompile Include="qcommon\net_chan.cpp"  />
+    <ClCompile Include="qcommon\q_math.cpp"  />
+    <ClCompile Include="qcommon\q_shared.cpp"  />
+    <ClCompile Include="qcommon\stringed_ingame.cpp"  />
+    <ClCompile Include="qcommon\stringed_interface.cpp"  />
+    <ClCompile Include="qcommon\strip.cpp"  />
+    <ClCompile Include="qcommon\unzip.cpp"  />
+    <ClCompile Include="..\lib\zlib\ioapi.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="qcommon\z_memman_pc.cpp"  />
+    <ClCompile Include="server\exe_headers.cpp"  />
+    <ClCompile Include="server\sv_ccmds.cpp"  />
+    <ClCompile Include="server\sv_client.cpp"  />
+    <ClCompile Include="server\sv_game.cpp"  />
+    <ClCompile Include="server\sv_init.cpp"  />
+    <ClCompile Include="server\sv_main.cpp"  />
+    <ClCompile Include="server\sv_savegame.cpp"  />
+    <ClCompile Include="server\sv_snapshot.cpp"  />
+    <ClCompile Include="server\sv_world.cpp"  />
+    <ClCompile Include="game\genericparser2.cpp"  />
+    <ClCompile Include="mp3code\cdct.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbt.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtb.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtl3.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cup.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupini.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupl1.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupl3.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwin.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinb.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinm.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\hwin.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3dq.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3init.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\mdct.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\mhead.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\msis.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\towave.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\uph.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\upsf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mp3code\wavep.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="ui\ui_atoms.cpp"  />
+    <ClCompile Include="ui\ui_connect.cpp"  />
+    <ClCompile Include="ui\ui_main.cpp"  />
+    <ClCompile Include="ui\ui_saber.cpp"  />
+    <ClCompile Include="ui\ui_shared.cpp"  />
+    <ClCompile Include="ui\ui_syscalls.cpp"  />
+    <ClCompile Include="RMG\RM_Area.cpp"  />
+    <ClCompile Include="RMG\RM_Instance.cpp"  />
+    <ClCompile Include="RMG\RM_Instance_BSP.cpp"  />
+    <ClCompile Include="RMG\RM_Instance_Group.cpp"  />
+    <ClCompile Include="RMG\RM_Instance_Random.cpp"  />
+    <ClCompile Include="RMG\RM_Instance_Void.cpp"  />
+    <ClCompile Include="RMG\RM_InstanceFile.cpp"  />
+    <ClCompile Include="RMG\RM_Manager.cpp"  />
+    <ClCompile Include="RMG\RM_Mission.cpp"  />
+    <ClCompile Include="RMG\RM_Objective.cpp"  />
+    <ClCompile Include="RMG\RM_Path.cpp"  />
+    <ClCompile Include="RMG\RM_Terrain.cpp"  />
+    <ClCompile Include="win32\win_input.cpp"  />
+    <ClCompile Include="win32\win_main.cpp"  />
+    <ClCompile Include="win32\win_shared.cpp"  />
+    <ClCompile Include="win32\win_snd.cpp"  />
+    <ClCompile Include="win32\win_syscon.cpp"  />
+    <ClCompile Include="win32\win_video.cpp"  />
+    <ClCompile Include="win32\win_wndproc.cpp"  />
+    <ResourceCompile Include="win32\winquake.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/JACODE/OpenJK-master/ZERO_CHECK.vcxproj">
+      <Project>88B0AE25-6EDC-479B-9573-B22CB311CB9D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

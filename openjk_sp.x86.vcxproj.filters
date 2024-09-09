@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="client\cl_cgame.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_cin.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_console.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_input.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_keys.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_main.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_mp3.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_parse.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_scrn.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_ui.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_ambient.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_dma.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_mem.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_mix.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\snd_music.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\vmachine.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_draw.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_load.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_patch.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_polylib.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_randomterrain.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_shader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_terrain.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_terrainmap.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_test.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cm_trace.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cmd.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\cvar.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\files_common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\files_pc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\md4.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\msg.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\net_chan.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\q_math.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\q_shared.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\stringed_ingame.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\stringed_interface.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\strip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\unzip.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\zlib\ioapi.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="qcommon\z_memman_pc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="server\exe_headers.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_ccmds.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_client.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_game.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_init.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_main.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_savegame.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_snapshot.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_world.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="game\genericparser2.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cdct.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbt.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtb.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\csbtl3.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cup.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupini.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupl1.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cupl3.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwin.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinb.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\cwinm.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\hwin.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3dq.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\l3init.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\mdct.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\mhead.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\msis.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\towave.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\uph.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\upsf.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="mp3code\wavep.c">
+      <Filter>mp3</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_atoms.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_connect.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_main.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_saber.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_shared.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_syscalls.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Area.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Instance.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Instance_BSP.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Instance_Group.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Instance_Random.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Instance_Void.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_InstanceFile.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Manager.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Mission.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Objective.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Path.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="RMG\RM_Terrain.cpp">
+      <Filter>rmg</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_input.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_shared.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_snd.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_syscon.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_video.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\win_wndproc.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client\eax\eax.h">
+      <Filter>eax</Filter>
+    </ClInclude>
+    <ClInclude Include="client\eax\EaxMan.h">
+      <Filter>eax</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\al.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alc.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alctypes.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\altypes.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alu.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\OpenAL\alut.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\keys.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\keycodes.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\cl_mp3.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\client.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\client_ui.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_ambient.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_local.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_music.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\snd_public.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="client\vmachine.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_draw.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_landscape.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_local.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_patch.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_polylib.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_public.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_randomterrain.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\cm_terrainmap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\q_shared.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\sstring.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\stringed_ingame.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\stringed_interface.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\unzip.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\zlib\ioapi.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\tags.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\chash.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\qfiles.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\files.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\qcommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\stv_version.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\timing.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="qcommon\MiniHeap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="server\exe_headers.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="server\server.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="game\channels.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\anims.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\b_public.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bg_public.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bset.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\bstate.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\common_headers.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_functions.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_items.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_local.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_nav.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_public.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\g_shared.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\genericparser2.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\statindex.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\teams.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\weapons.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\surfaceflags.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="game\ghoul2_shared.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\config.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\htable.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\jdw.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\l3.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\mhead.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\mp3struct.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\port.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\small_header.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="mp3code\tableawd.h">
+      <Filter>mp3</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\gameinfo.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\menudef.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_local.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_public.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_shared.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Area.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Headers.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Instance.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Instance_BSP.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Instance_Group.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Instance_Random.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Instance_Void.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_InstanceFile.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Manager.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Mission.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Objective.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Path.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="RMG\RM_Terrain.h">
+      <Filter>rmg</Filter>
+    </ClInclude>
+    <ClInclude Include="ghoul2\G2.h">
+      <Filter>ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="ghoul2\ghoul2_gore.h">
+      <Filter>ghoul2</Filter>
+    </ClInclude>
+    <ClInclude Include="cgame\cg_public.h">
+      <Filter>cgame</Filter>
+    </ClInclude>
+    <ClInclude Include="cgame\animtable.h">
+      <Filter>cgame</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\afxres.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\win_local.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\AutoVersion.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\resource.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\glw_win.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\winquake.rc">
+      <Filter>win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="eax">
+      <UniqueIdentifier>{4D761490-8036-40F8-99D5-748EFBFAA1EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client">
+      <UniqueIdentifier>{DC692A55-1904-4B2D-8163-600A6DDE4038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{A4CDF186-E453-48A9-AEDB-D3DB423A109C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{17545A9E-3601-4AC9-A3C3-7B15D64C7FD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{703C7DBB-5036-46F5-8B05-5BDB995CA841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp3">
+      <UniqueIdentifier>{8C85C598-1DF3-4F48-89D2-C288CE52AA56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{B86D99D0-A762-4BF0-9F6C-213ADCD7BC75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rmg">
+      <UniqueIdentifier>{FC184279-AAD9-4732-A5A4-FF6B1CFD2DF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ghoul2">
+      <UniqueIdentifier>{B956B269-A7CA-4040-9CDC-A3C461A44740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cgame">
+      <UniqueIdentifier>{D1201104-6E9B-44FD-AC3B-BD463D0DDE92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{DB398E18-CA85-4717-AE3A-805A8AA46BC6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
