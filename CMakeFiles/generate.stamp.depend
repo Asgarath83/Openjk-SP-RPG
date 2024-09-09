@@ -1,6 +1,2 @@
 # CMake generation dependency list for this directory.
-F:/JACODE/OpenJK-master/code/CMakeLists.txt
-F:/Programmi/CMake/share/cmake-3.2/Modules/FindOpenGL.cmake
-F:/Programmi/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
-F:/Programmi/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
-F:/Programmi/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+F:/JACODE/OpenJK-master/code/game/CMakeLists.txt
